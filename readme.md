@@ -1,0 +1,152 @@
+<br />
+<p align="center">
+  <h3 align="center">Folium-VectorTileLayer</h3>
+
+  <p align="center">
+    VectorTileLayer plugin for Folium
+    <br />
+    <a href="https://github.com/iwpnd/folium-vectortilelayer/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/iwpnd/folium-vectortilelayer/issues">Request Feature</a>
+  </p>
+</p>
+
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+### Built With
+
+-   [folium](https://github.com/python-visualization/folium)
+-   [Leaflet.VectorTileLayer](https://gitlab.com/jkuebart/Leaflet.VectorTileLayer)
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+### Prerequisite
+
+Install [Poetry](https://python-poetry.org/docs/#installation).
+
+### Installation
+
+#### as dependency
+
+```
+poetry add git+https://github.com/iwpnd/folium-vectortilelayer.git
+```
+
+#### local development
+
+1. Clone and install
+    ```sh
+    git clone https://github.com/iwpnd/folium-vectortilelayer.git
+    poetry install
+    ```
+2. Test it!
+    ```sh
+    poe test  # or poetry run pytest .
+    ```
+
+## Usage
+
+```python
+from folium_vectortilelayer import VectorTileLayer
+import folium
+
+url = "https://free.tilehosting.com/data/v3/{z}/{x}/{y}.pbf?token=my_token"
+
+m = folium.Map()
+options = {
+    "layers": ["my_layer"], # define layer to be shown
+    "minDetailZoom": 5,
+    "maxDetailZoom": 14,
+    "vectorTileLayerStyles": {
+        "my_layer":{
+            "fill": True,
+            "weight": 1,
+            "fillColor": 'green',
+            "color": 'black',
+            "fillOpacity":0.6,
+            "opacity":0.6
+        },
+    }
+}
+
+vc = VectorTileLayer(url, "folium_layer_name", options)
+m.add_child(vc)
+m
+```
+
+Or with conditional styling
+
+```python
+import folium
+from folium_vectortilelayer import VectorTileLayer
+
+m = folium.Map()
+url = "https://free.tilehosting.com/data/v3/{z}/{x}/{y}.pbf?token=my_token"
+
+options = '''{
+  "layers": ["my_layer"],
+  "vectorTileLayerStyles": {
+    "my_layer": function(f) {
+      if (f.type === 'parks') {
+        return {
+          "fill": true,
+          "weight": 1,
+          "fillColor": 'green',
+          "color": 'black',
+          "fillOpacity":0.6,
+          "opacity":0.6
+        };
+      }
+
+      if (f.type === 'water') {
+        return {
+          "fill": true,
+          "weight": 1,
+          "fillColor": 'purple',
+          "color": 'black',
+          "fillOpacity":0.6,
+          "opacity":0.6
+        };
+      }
+    }
+  }
+}'''
+
+VectorTileLayer(url,"layer_name",options).add_to(m)
+m
+```
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+Benjamin Ramser - [@imwithpanda](https://twitter.com/imwithpanda) - ahoi@iwpnd.pw  
+Project Link: [https://github.com/iwpnd/folium-vector](https://github.com/iwpnd/folium-vectortilelayer)
