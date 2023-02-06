@@ -37,6 +37,17 @@
 
 ## About The Project
 
+Follow up on [folium-vectorgrid](https://github.com/iwpnd/folium-vectorgrid) that wraps 
+[Leaflet.VectorTileLayer](https://gitlab.com/jkuebart/Leaflet.VectorTileLayer) to render
+Mapbox vector tiles in folium maps.
+
+Other than [Leaflet.VectorGrid](https://github.com/Leaflet/Leaflet.VectorGrid/), [Leaflet.VectorTileLayer](https://gitlab.com/jkuebart/Leaflet.VectorTileLayer) allows 
+to "overzoom" and "underzoom".
+Even if the tiling provider only provides map tiles for zoom level 5 through 12, 
+[Leaflet.VectorTileLayer](https://gitlab.com/jkuebart/Leaflet.VectorTileLayer) utilizes
+data from these upper and lower bounds to render tiles beyond 
+zoom level 12 and 5 respectively.
+
 ### Built With
 
 -   [folium](https://github.com/python-visualization/folium)
