@@ -28,7 +28,6 @@ def test_vectortilelayer():
 
 def test_vectortilelayer_str_options():
     m = folium.Map(location=(30, 20), zoom_start=4)
-    token = "test_token"
     url = "https://free.tilehosting.com/data/v3/{z}/{x}/{y}.pbf?token=my_token"
     options = """{
         "layers": ["all"],
