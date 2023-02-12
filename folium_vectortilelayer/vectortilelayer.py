@@ -36,13 +36,16 @@ class VectorTileLayer(JSCSSMixin, Layer):
         // default is to render all layers as they appear in the tile.
         layers, // default undefined
 
-        // Specify zoom range in which tiles are loaded. Tiles will be
-        // rendered from the same data for Zoom levels outside the range.
+        // minimum and maximum boundary of tiles provided by the source
         minDetailZoom, // default undefined
         maxDetailZoom, // default undefined
 
-        // Specify zoom range
+        // zoom range of the map
+        // if minZoom < minDetailZoom, features in minDetailZoom are
+        // used until minZoom
         minZoom,
+        // if maxZoom > maxDetailZoom, features in maxDetailZoom are
+        // used until maxZoom
         maxZoom,
 
         // Styling options.
