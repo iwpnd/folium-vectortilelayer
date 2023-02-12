@@ -154,10 +154,12 @@ class VectorTileLayer(JSCSSMixin, Layer):
         )
     ]
 
-    def __init__(self, url, layer_name, options=None):
+    def __init__(self, url, layer_name, options=None, overlay=True, show=True):
         self.layer_name = layer_name if layer_name else "VectorTileLayer"
 
-        super(VectorTileLayer, self).__init__(name=self.layer_name)
+        super(VectorTileLayer, self).__init__(
+            name=self.layer_name, overlay=overlay, show=show
+        )
 
         if options is not None:
             self.options = options
