@@ -41,6 +41,10 @@ class VectorTileLayer(JSCSSMixin, Layer):
         minDetailZoom, // default undefined
         maxDetailZoom, // default undefined
 
+        // Specify zoom range
+        minZoom,
+        maxZoom,
+
         // Styling options.
         style, // default undefined
 
