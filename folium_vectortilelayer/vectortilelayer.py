@@ -1,3 +1,5 @@
+from typing import Optional, Union
+
 from folium.elements import JSCSSMixin
 from folium.map import Layer
 from jinja2 import Template
@@ -154,13 +156,18 @@ class VectorTileLayer(JSCSSMixin, Layer):
         )
     ]
 
-    def __init__(self, url, layer_name, options=None, overlay=True, show=True):
-        self.layer_name = layer_name if layer_name else "VectorTileLayer"
-
+    def __init__(
+        self,
+        url: str,
+        name: Optional[str] = None,
+        options: Union[str, dict, None] = None,
+        overlay: bool = True,
+        control: bool = True,
+        show: bool = True,
+    ):
         super(VectorTileLayer, self).__init__(
-            name=self.layer_name, overlay=overlay, show=show
+            name=self.layer_name, overlay=overlay, show=show, control=control
         )
-
         if options is not None:
             self.options = options
 
