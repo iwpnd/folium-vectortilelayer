@@ -166,7 +166,7 @@ class VectorTileLayer(JSCSSMixin, Layer):
         show: bool = True,
     ):
         super(VectorTileLayer, self).__init__(
-            name=self.layer_name, overlay=overlay, show=show, control=control
+            name=name, overlay=overlay, show=show, control=control
         )
         if options is not None:
             self.options = options
