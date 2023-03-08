@@ -2,6 +2,9 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.0 (2023-03-08)
+
+
 ## v0.1.0 (2023-03-08)
 ### Feature
 * Add show and overlay options and pass to super on init ([`abd1f92`](https://github.com/iwpnd/folium-vectortilelayer/commit/abd1f92568b4b31698efb591c6a746f2f0589dd1))
