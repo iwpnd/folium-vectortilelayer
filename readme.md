@@ -69,6 +69,10 @@ Install [Poetry](https://python-poetry.org/docs/#installation).
 poetry add git+https://github.com/iwpnd/folium-vectortilelayer.git
 ```
 
+```
+pip install folium-vectortilelayer
+```
+
 #### local development
 
 1. Clone and install
