@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.1 (2023-03-13)
+### Documentation
+* Update ([`f5a0410`](https://github.com/iwpnd/folium-vectortilelayer/commit/f5a0410aa4b6958b99e5ffb38ce97b35721f2161))
+
 ## v0.2.0 (2023-03-08)
 
 
