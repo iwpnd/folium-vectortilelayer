@@ -3,7 +3,7 @@ name = "folium-vectortilelayer"
 version = "0.2.1"
 description = "VectorTileLayer plugin for folium"
 authors = ["Benjamin Ramser <ahoi@ipwnd.pw>"]
-readme = "README.md"
+readme = "readme.md"
 license = "MIT"
 
 [tool.poetry.dependencies]
