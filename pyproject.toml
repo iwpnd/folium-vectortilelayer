@@ -100,6 +100,7 @@ exclude_commit_patterns = [
   "chore\\(release\\):",
   "chore\\(deps-dev\\):",
   "build\\(deps-dev\\):",
+  "build\\(deps\\):",
   "ci:",
 ]
 
