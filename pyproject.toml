@@ -2,7 +2,7 @@
 name = "folium-vectortilelayer"
 version = "0.2.2"
 description = "VectorTileLayer plugin for folium"
-authors = ["Benjamin Ramser <ahoi@ipwnd.pw>"]
+authors = ["Benjamin Ramser <iwpdn@posteo.de>"]
 readme = "readme.md"
 license = "MIT"
 
@@ -92,7 +92,7 @@ allowed_tags = [
     "test",
 ]
 minor_tags = ["feat"]
-patch_tags = ["fix", "perf", "chore\\(deps\\)"]
+patch_tags = ["fix", "perf", "chore-deps"]
 
 [tool.semantic_release.changelog]
 exclude_commit_patterns = [
