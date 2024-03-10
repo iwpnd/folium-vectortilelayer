@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "folium-vectortilelayer"
-version = "0.2.2"
+version = "0.2.3"
 description = "VectorTileLayer plugin for folium"
 authors = ["Benjamin Ramser <iwpdn@posteo.de>"]
 readme = "readme.md"
