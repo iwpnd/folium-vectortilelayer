@@ -1,58 +1,22 @@
 # CHANGELOG
 
+## v0.2.4 (2024-07-01)
 
+### Chore
+
+* chore: fix ruff lint command ([`59d678f`](https://github.com/iwpnd/folium-vectortilelayer/commit/59d678fde118168cbfb38469ee487a42dff49559))
+
+* chore: remove chore(deps) from patch_tags ([`0e3941c`](https://github.com/iwpnd/folium-vectortilelayer/commit/0e3941c3344872fabc0c66538a0b18e110d1aea5))
+
+* chore: add chore(deps) to allowed tags ([`30a4d18`](https://github.com/iwpnd/folium-vectortilelayer/commit/30a4d18dd07f1670da00795e86700a13c80c0499))
+
+* chore: ignore build deps from changelog ([`5286ba2`](https://github.com/iwpnd/folium-vectortilelayer/commit/5286ba2ff49b2b911131ffb54ea18d90943fdff4))
+
+### Fix
+
+* fix: bump folium ([`601df1c`](https://github.com/iwpnd/folium-vectortilelayer/commit/601df1ccf3f193d5f62aa844566d5854e7cf5d7a))
 
 ## v0.2.3 (2024-03-10)
-
-### Build
-
-* build(deps): bump actions/cache from 3.3.2 to 3.3.3
-
-Bumps [actions/cache](https://github.com/actions/cache) from 3.3.2 to 3.3.3.
-- [Release notes](https://github.com/actions/cache/releases)
-- [Changelog](https://github.com/actions/cache/blob/main/RELEASES.md)
-- [Commits](https://github.com/actions/cache/compare/v3.3.2...v3.3.3)
-
----
-updated-dependencies:
-- dependency-name: actions/cache
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`083e61b`](https://github.com/iwpnd/folium-vectortilelayer/commit/083e61ba861a45e41fa2ee8f7483a2de4f814789))
-
-* build(deps): bump python-semantic-release/python-semantic-release
-
-Bumps [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release) from 8.0.0 to 8.7.2.
-- [Release notes](https://github.com/python-semantic-release/python-semantic-release/releases)
-- [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.md)
-- [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v8.0.0...v8.7.2)
-
----
-updated-dependencies:
-- dependency-name: python-semantic-release/python-semantic-release
-  dependency-type: direct:production
-  update-type: version-update:semver-minor
-...
-
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`1c3b768`](https://github.com/iwpnd/folium-vectortilelayer/commit/1c3b768ebdd7a38670e0e777733f919619399981))
-
-* build(deps): bump actions/checkout from 3 to 4
-
-Bumps [actions/checkout](https://github.com/actions/checkout) from 3 to 4.
-- [Release notes](https://github.com/actions/checkout/releases)
-- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
-- [Commits](https://github.com/actions/checkout/compare/v3...v4)
-
----
-updated-dependencies:
-- dependency-name: actions/checkout
-  dependency-type: direct:production
-  update-type: version-update:semver-major
-...
-
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`dd8b752`](https://github.com/iwpnd/folium-vectortilelayer/commit/dd8b7523e6fce3d415050425b5793a3d0d794557))
 
 ### Chore
 
@@ -66,77 +30,11 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`dd8b752`](https://g
 
 * chore: dont list deps-dev in changelog ([`dbc44f3`](https://github.com/iwpnd/folium-vectortilelayer/commit/dbc44f3f8fa87eac0d9702e18e4f7fbf6162c09b))
 
-### Chore-deps
+### Unknown
 
 * chore-deps: use chore-deps to bump patches ([`806f8ae`](https://github.com/iwpnd/folium-vectortilelayer/commit/806f8ae9198c83644617533c1e1c59bf98c0763d))
 
-
 ## v0.2.2 (2024-01-09)
-
-### Build
-
-* build(deps): bump actions/setup-python from 4 to 5
-
-Bumps [actions/setup-python](https://github.com/actions/setup-python) from 4 to 5.
-- [Release notes](https://github.com/actions/setup-python/releases)
-- [Commits](https://github.com/actions/setup-python/compare/v4...v5)
-
----
-updated-dependencies:
-- dependency-name: actions/setup-python
-  dependency-type: direct:production
-  update-type: version-update:semver-major
-...
-
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`a031ac1`](https://github.com/iwpnd/folium-vectortilelayer/commit/a031ac1f7fe90a6bca5d3e0d75de850a6954176a))
-
-* build(deps): bump folium from 0.15.0 to 0.15.1
-
-Bumps [folium](https://github.com/python-visualization/folium) from 0.15.0 to 0.15.1.
-- [Release notes](https://github.com/python-visualization/folium/releases)
-- [Changelog](https://github.com/python-visualization/folium/blob/main/CHANGES.txt)
-- [Commits](https://github.com/python-visualization/folium/compare/v0.15.0...v0.15.1)
-
----
-updated-dependencies:
-- dependency-name: folium
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`45eba5e`](https://github.com/iwpnd/folium-vectortilelayer/commit/45eba5ef9224f192f7cb34a2dc537585047f1712))
-
-* build(deps): bump folium from 0.14.0 to 0.15.0
-
-Bumps [folium](https://github.com/python-visualization/folium) from 0.14.0 to 0.15.0.
-- [Release notes](https://github.com/python-visualization/folium/releases)
-- [Changelog](https://github.com/python-visualization/folium/blob/main/CHANGES.txt)
-- [Commits](https://github.com/python-visualization/folium/compare/v0.14.0...v0.15.0)
-
----
-updated-dependencies:
-- dependency-name: folium
-  dependency-type: direct:production
-  update-type: version-update:semver-minor
-...
-
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`6fba11f`](https://github.com/iwpnd/folium-vectortilelayer/commit/6fba11f8c04041a55df88d14aff586a5b2500853))
-
-* build(deps): bump actions/checkout from 3 to 4
-
-Bumps [actions/checkout](https://github.com/actions/checkout) from 3 to 4.
-- [Release notes](https://github.com/actions/checkout/releases)
-- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
-- [Commits](https://github.com/actions/checkout/compare/v3...v4)
-
----
-updated-dependencies:
-- dependency-name: actions/checkout
-  dependency-type: direct:production
-  update-type: version-update:semver-major
-...
-
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`a41e19f`](https://github.com/iwpnd/folium-vectortilelayer/commit/a41e19feacacaffa812026ad6cfddfc66d606041))
 
 ### Chore
 
@@ -172,7 +70,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`a41e19f`](https://g
 
 This reverts commit b396f60574c32292449ae16d1e436f54dab53050. ([`c64af65`](https://github.com/iwpnd/folium-vectortilelayer/commit/c64af65c005bc840a1d6bed20a34de063812596f))
 
-
 ## v0.2.1 (2023-03-13)
 
 ### Chore
@@ -182,7 +79,6 @@ This reverts commit b396f60574c32292449ae16d1e436f54dab53050. ([`c64af65`](https
 ### Documentation
 
 * docs: update ([`f5a0410`](https://github.com/iwpnd/folium-vectortilelayer/commit/f5a0410aa4b6958b99e5ffb38ce97b35721f2161))
-
 
 ## v0.2.0 (2023-03-08)
 
