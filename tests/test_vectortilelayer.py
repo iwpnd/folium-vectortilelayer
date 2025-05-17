@@ -11,7 +11,7 @@ from folium.utilities import normalize
 from folium_vectortilelayer import VectorTileLayer
 
 
-def test_vectortilelayer():
+def test_vectortilelayer() -> None:
     m = folium.Map(location=(30, 20), zoom_start=4)
     url = "https://free.tilehosting.com/data/v3/{z}/{x}/{y}.pbf?token=my_token"
     vc = VectorTileLayer(url, "test").add_to(m)
@@ -26,7 +26,7 @@ def test_vectortilelayer():
     assert "VectorTileLayer.default" in out
 
 
-def test_vectortilelayer_str_options():
+def test_vectortilelayer_str_options() -> None:
     m = folium.Map(location=(30, 20), zoom_start=4)
     url = "https://free.tilehosting.com/data/v3/{z}/{x}/{y}.pbf?token=my_token"
     options = """{
@@ -66,7 +66,7 @@ def test_vectortilelayer_str_options():
         assert f'"{k}": {v}' in out
 
 
-def test_vectortilelayer_dict_options():
+def test_vectortilelayer_dict_options() -> None:
     m = folium.Map(location=(30, 20), zoom_start=4)
     url = "https://free.tilehosting.com/data/v3/{z}/{x}/{y}.pbf?token=my_token"
     options = {
@@ -93,7 +93,7 @@ def test_vectortilelayer_dict_options():
     assert url in out
     assert "VectorTileLayer.default" in out
 
-    for k, v in options["vectorTileLayerStyles"]["all"].items():
+    for k, v in options["vectorTileLayerStyles"]["all"].items():  # type: ignore[index]
         if isinstance(v, bool):
             assert f'"{k}": {str(v).lower()}' in out
             continue

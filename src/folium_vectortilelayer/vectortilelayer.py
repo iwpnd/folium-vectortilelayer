@@ -1,5 +1,3 @@
-from typing import Optional, Union
-
 from folium.elements import JSCSSMixin
 from folium.map import Layer
 from jinja2 import Template
@@ -147,9 +145,9 @@ class VectorTileLayer(JSCSSMixin, Layer):
             {% endif %}
             {%- endmacro %}
             """
-    )  # noqa
+    )
 
-    default_js = [
+    default_js = [  # noqa:RUF012
         (
             "VectorTileLayer",
             "https://unpkg.com/leaflet-vector-tile-layer@latest/dist/VectorTileLayer.umd.js",
@@ -159,13 +157,13 @@ class VectorTileLayer(JSCSSMixin, Layer):
     def __init__(
         self,
         url: str,
-        name: Optional[str] = None,
-        options: Union[str, dict, None] = None,
+        name: str | None = None,
+        options: str | dict | None = None,
         overlay: bool = True,
         control: bool = True,
         show: bool = True,
     ):
-        super(VectorTileLayer, self).__init__(
+        super(VectorTileLayer, self).__init__(  # noqa:UP008
             name=name, overlay=overlay, show=show, control=control
         )
         if options is not None:
