@@ -59,7 +59,7 @@ zoom level 12 and 5 respectively.
 
 ### Prerequisite
 
-Install [Poetry](https://python-poetry.org/docs/#installation).
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/).
 
 ### Installation
 
@@ -73,16 +73,20 @@ poetry add git+https://github.com/iwpnd/folium-vectortilelayer.git
 pip install folium-vectortilelayer
 ```
 
+```
+uv add folium-vectortilelayer
+```
+
 #### local development
 
 1. Clone and install
     ```sh
     git clone https://github.com/iwpnd/folium-vectortilelayer.git
-    poetry install
+    uv sync
     ```
 2. Test it!
     ```sh
-    poe test  # or poetry run pytest .
+    make test
     ```
 
 ## Usage
