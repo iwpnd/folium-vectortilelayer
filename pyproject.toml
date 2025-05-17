@@ -3,7 +3,7 @@ name = "folium-vectortilelayer"
 version = "0.2.4"
 description = "VectorTileLayer plugin for folium"
 authors = [{ name = "Benjamin Ramser", email = "iwpnd@posteo.de" }]
-readme = "README.md"
+readme = "readme.md"
 keywords = ['python']
 requires-python = ">=3.10,<4.0"
 classifiers = [
