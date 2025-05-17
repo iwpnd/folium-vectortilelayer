@@ -1,6 +1,6 @@
 [project]
 name = "folium-vectortilelayer"
-version = "0.2.4"
+version = "0.2.5"
 description = "VectorTileLayer plugin for folium"
 authors = [{ name = "Benjamin Ramser", email = "iwpnd@posteo.de" }]
 readme = "readme.md"
