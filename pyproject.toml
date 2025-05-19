@@ -141,15 +141,12 @@ allowed_tags = [
     "test",
 ]
 minor_tags = ["feat"]
-patch_tags = ["fix", "perf", "docs"]
+patch_tags = ["fix", "perf", "docs", "refactor"]
 
 [tool.semantic_release.changelog]
 exclude_commit_patterns = [
-  "chore\\(release\\):",
-  "chore\\(deps-dev\\):",
-  "build\\(deps-dev\\):",
-  "build\\(deps\\):",
   "ci:",
+  "build:",
 ]
 
 [tool.basedpyright]
