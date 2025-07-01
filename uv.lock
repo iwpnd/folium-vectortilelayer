@@ -329,7 +329,7 @@ wheels = [
 
 [[package]]
 name = "folium-vectortilelayer"
-version = "0.2.5"
+version = "1.0.0"
 source = { editable = "." }
 dependencies = [
     { name = "folium" },
